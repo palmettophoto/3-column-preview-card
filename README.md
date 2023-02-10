@@ -13,7 +13,7 @@ Build 3-column preview card component that is responsive at sizes 375px & 1440px
 
 ### Links
 
-- Solution URL: (https://palmettophoto/3-column-preview-card.git)
+- Solution URL: (https://github.com/palmettophoto/3-column-preview-card.git)
 - Live Site URL: (https://palmettophoto.github.io/3-column-preview-card/)
 
 ## My process
