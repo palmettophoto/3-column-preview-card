@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  :root {
+
+ /* primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+  }
+
+body {
+    background-color: var(--background-headings-buttons);
+}
+
+main {
+    height: fit-content;
+    margin: auto;
+    padding-top: 15%;
+
+}
+
+
+.container {
+    border-radius: 10px;
+    width: min(915px, 90%);
+    overflow: hidden;
+    margin: auto;
+}
+
+.card {
+    padding: 15vw;
+}
+
+img {
+    margin-bottom: 2rem;
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--background-headings-buttons);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card__btn {
+    background-color: var(--background-headings-buttons);
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.card__copy {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--paragraphs);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.card--1 {
+    background-color: var(--Bright-orange);
+}
+
+.card--1 .card__btn{
+    color: var(--Bright-orange);
+}
+.card--1 .card__btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px white solid;
+}
+
+.card--2 {
+    background-color: var(--Dark-cyan);
+}
+
+.card--2 .card__btn {
+    color: var(--Dark-cyan);
+}
+.card--2 .card__btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px white solid;
+}
+
+.card--3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+.card--3 .card__btn {
+    color: var(--Very-dark-cyan);
+}
+.card--3 .card__btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px white solid;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        width: 33.33%;
+        padding: 5%;
+    }
+
+    .card__copy {
+        margin-bottom: 10vh;
+    }
+}
